@@ -5,6 +5,7 @@ Loop
     isFullScreen := isActiveWindowFullScreen(WinId, class)
     if (isFullScreen)
     {
+        Sleep, 5000
         Process, Close, Rainmeter.exe
     }
     else if (!ProcessExist("Rainmeter.exe")) && (class == "WorkerW")
